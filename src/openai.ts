@@ -4,7 +4,7 @@ import fetchAdapter from "@vespaiach/axios-fetch-adapter";
 class OpenAI {
   private readonly client: OpenAIApi;
   public static readonly MODELS = {
-    chatGPT: "text-davinci-003",
+    chatGPT: "gpt-3.5-turbo",
   };
   public static readonly MAX_TOKENS = 4000;
   public static readonly TIMEOUT = 100000;

@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4afbd33d-b799-4d18-b21f-549f502330d7" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/openai.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/openai.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/line-bot.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/line-bot.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +88,7 @@
       <updated>1671199706747</updated>
       <workItem from="1671199710737" duration="18070000" />
       <workItem from="1671291192757" duration="8130000" />
-      <workItem from="1678263514164" duration="415000" />
+      <workItem from="1678263514164" duration="660000" />
     </task>
     <servers />
   </component>

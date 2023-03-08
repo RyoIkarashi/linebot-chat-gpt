@@ -1,5 +1,6 @@
 import OpenAI from "./openai";
 import { WebhookEvent } from "@line/bot-sdk";
+import * as repl from "repl";
 
 class LineBot {
   private readonly channelAccessToken: string;
@@ -23,13 +24,16 @@ class LineBot {
     }
 
     const completion = await this.openai.chatGPT(event.message.text);
+    const replyMessage = completion.data.choices
+      .map((reply) => reply.message)
+      .join("\n");
     await fetch("https://api.line.me/v2/bot/message/reply", {
       body: JSON.stringify({
         replyToken: event.replyToken,
         messages: [
           {
             type: "text",
-            text: completion.data.choices[0].message ?? "huh?",
+            text: replyMessage.length ? replyMessage : "huh?",
           },
         ],
       }),

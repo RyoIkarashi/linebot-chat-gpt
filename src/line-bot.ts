@@ -24,9 +24,7 @@ class LineBot {
     }
 
     const completion = await this.openai.chatGPT(event.message.text);
-    const replyMessage = completion.data.choices
-      .map((reply) => reply.message)
-      .join("\n");
+    const replyMessage = completion.data.choices[0]?.message?.content ?? "";
     await fetch("https://api.line.me/v2/bot/message/reply", {
       body: JSON.stringify({
         replyToken: event.replyToken,

@@ -20,9 +20,9 @@ class OpenAI {
   }
 
   public async chatGPT(prompt: string) {
-    return await this.client.createCompletion(
+    return await this.client.createChatCompletion(
       {
-        prompt,
+        messages: [{ role: "user", content: prompt }],
         model: OpenAI.MODELS.chatGPT,
         max_tokens: OpenAI.MAX_TOKENS,
       },

@@ -17,7 +17,7 @@
     "@vespaiach/axios-fetch-adapter": "^0.3.1",
     "crypto": "^1.0.1",
     "hono": "^2.6.2",
-    "openai": "^3.1.0",
+    "openai": "^3.2.1",
     "prettier": "^2.8.1"
   }
 }

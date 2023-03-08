@@ -29,7 +29,7 @@ class LineBot {
         messages: [
           {
             type: "text",
-            text: completion.data.choices[0].text ?? "huh?",
+            text: completion.data.choices[0].message ?? "huh?",
           },
         ],
       }),

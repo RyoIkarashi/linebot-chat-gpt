@@ -4,7 +4,10 @@ import fetchAdapter from "@vespaiach/axios-fetch-adapter";
 class OpenAI {
   private readonly client: OpenAIApi;
   public static readonly MODELS = {
-    chatGPT: "gpt-3.5-turbo",
+    chatGPT: {
+      gpt_3_5_turbo: "gpt-3.5-turbo",
+      gpt_4: "gpt-4",
+    },
   };
   public static readonly MAX_TOKENS = 4000;
   public static readonly TIMEOUT = 100000;
@@ -23,7 +26,7 @@ class OpenAI {
     return await this.client.createChatCompletion(
       {
         messages: [{ role: "user", content: prompt }],
-        model: OpenAI.MODELS.chatGPT,
+        model: OpenAI.MODELS.chatGPT.gpt_4,
         max_tokens: OpenAI.MAX_TOKENS,
       },
       {

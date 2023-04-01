@@ -1,4 +1,4 @@
-name = "ask-me-anything"
+name = "chatgpt-linebot"
 main = "src/index.ts"
 compatibility_date = "2022-12-16"
 usage_model = "bundled"
